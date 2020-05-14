@@ -6,15 +6,15 @@ public class Bai5 {
     public static void main(String[] args) {
 //  Bài 5: Nhập vào 4 số nguyên a, b, c, d. In ra màn hình kết quả số lớn nhất, nhỏ nhất.
 
-        int a,b,c,d;
+        int a, b, c, d;
         System.out.println("Nhập vào số nguyên a: ");
-        a=new Scanner(System.in).nextInt();
+        a = new Scanner(System.in).nextInt();
         System.out.println("Nhập vào số nguyên b: ");
-        b=new Scanner(System.in).nextInt();
+        b = new Scanner(System.in).nextInt();
         System.out.println("Nhập vào số nguyên c: ");
-        c=new Scanner(System.in).nextInt();
+        c = new Scanner(System.in).nextInt();
         System.out.println("Nhập vào số nguyên d: ");
-        d=new Scanner(System.in).nextInt();
+        d = new Scanner(System.in).nextInt();
 
 //      === cách 1: so sánh từng cặp ===
 //        int max,min,max1,max2,min1,min2;
@@ -66,15 +66,15 @@ public class Bai5 {
 //        System.out.println("Số bé nhất là: "+flagMin);
 
 //      === cách 3: dùng toán tử 3 ngôi ===
-        int max1=(a>b)?a:b;
-        int max2=(c>d)?c:d;
-        int max=(max1 > max2) ? max1 : max2;
-        System.out.println("Số lớn nhất là: "+ max);
+        int max1 = (a > b) ? a : b;
+        int max2 = (c > d) ? c : d;
+        int max = (max1 > max2) ? max1 : max2;
+        System.out.println("Số lớn nhất là: " + max);
 
-        int min1=(a<b)?a:b;
-        int min2=(c<d)?c:d;
-        int min=(min1 < min2) ? min1 : min2;
-        System.out.println("Số bé nhất là: "+min);
+        int min1 = (a < b) ? a : b;
+        int min2 = (c < d) ? c : d;
+        int min = (min1 < min2) ? min1 : min2;
+        System.out.println("Số bé nhất là: " + min);
     }
 
 }

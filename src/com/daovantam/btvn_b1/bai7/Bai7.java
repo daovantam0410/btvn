@@ -16,19 +16,19 @@ public class Bai7 {
         System.out.println("Nhập vào cạnh thứ ba c = ");
         float c = new Scanner(System.in).nextFloat();
 
-        if (a+b<c || a+c<b || b+c<a){
+        if (a + b < c || a + c < b || b + c < a) {
             System.out.println("Đây không phải là tam giác!");
-        }else{
-            if (a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a){
-                if (a==b && a!=c || b==a && b!=c || c==a && c!=b){
+        } else {
+            if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a) {
+                if (a == b && a != c || b == a && b != c || c == a && c != b) {
                     System.out.println("Đây là tam giác vuông cân!");
-                }else
+                } else
                     System.out.println("Đây là tam giác vuông!");
-            }else if (a==b && a!=c || b==a && b!=c || c==a && c!=b ){
+            } else if (a == b && a != c || b == a && b != c || c == a && c != b) {
                 System.out.println("Đây là tam giác cân");
-            }else if (a==b && a==c && b==c){
+            } else if (a == b && a == c && b == c) {
                 System.out.println("Đây là tam giác đều!");
-            }else
+            } else
                 System.out.println("Đây là tam giác thường!");
         }
     }

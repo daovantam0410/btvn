@@ -11,10 +11,10 @@ public class Bai6 {
         do {
             System.out.println("Nhập vào tháng: ");
             thang = new Scanner(System.in).nextInt();
-            if (thang < 1 || thang > 12){
+            if (thang < 1 || thang > 12) {
                 System.out.println("Tháng không hợp lệ, Mời bạn nhập lại!");
             }
-        }while (thang < 1 || thang > 12);
+        } while (thang < 1 || thang > 12);
         do {
             System.out.println("Nhập vào năm: ");
             nam = new Scanner(System.in).nextInt();

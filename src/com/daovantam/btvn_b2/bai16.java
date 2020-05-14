@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class bai16 {
 
-    private static float bai16(int n, int x){
+    private static float bai16(int n, int x) {
         int mau = 0;
         float tong = 0;
         int tu = 1;
-        for (int i = 1; i <= n ; i++) {
-            mau+=i;
-            tu = tu*x;
-            tong = tong + (float) tu/mau;
+        for (int i = 1; i <= n; i++) {
+            mau += i;
+            tu = tu * x;
+            tong = tong + (float) tu / mau;
         }
         return tong;
     }
@@ -22,7 +22,7 @@ public class bai16 {
         int x = scanner.nextInt();
         System.out.println("Nhập vào n = ");
         int n = scanner.nextInt();
-        float tong = bai16(n,x);
-        System.out.println("Tổng  = "+tong);
+        float tong = bai16(n, x);
+        System.out.println("Tổng  = " + tong);
     }
 }

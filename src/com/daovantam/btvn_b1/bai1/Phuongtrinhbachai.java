@@ -15,22 +15,22 @@ public class Phuongtrinhbachai {
         int b = new Scanner(System.in).nextInt();
         System.out.println("Nhập vào hằng số c = ");
         int c = new Scanner(System.in).nextInt();
-        if (a==0){
-            if (b==0){
+        if (a == 0) {
+            if (b == 0) {
                 System.out.println("Phương trình này vô nghiệm!");
-            }else{
-                System.out.println("Phương trình này có một nghiệm: "+ "x = "+ (-c/b));
+            } else {
+                System.out.println("Phương trình này có một nghiệm: " + "x = " + (-c / b));
             }
             return;
         }
-        float delta = (float) (b*b-4*a*c);
-        float x1,x2;
-        if (delta>0){
-            System.out.println("Phương trình này có hai nghiệm phân biệt: "+"x1 = "+(float)((-b+Math.sqrt(delta))/(2*a))+" và x2 = "+(float)((-b-Math.sqrt(delta))/(2*a)));
-        }else if (delta<0){
+        float delta = (float) (b * b - 4 * a * c);
+        float x1, x2;
+        if (delta > 0) {
+            System.out.println("Phương trình này có hai nghiệm phân biệt: " + "x1 = " + (float) ((-b + Math.sqrt(delta)) / (2 * a)) + " và x2 = " + (float) ((-b - Math.sqrt(delta)) / (2 * a)));
+        } else if (delta < 0) {
             System.out.println("Phương trình này vô nghiệm!");
-        }else {
-            System.out.println("Phương trình này có nghiệm kép x1 = x2 = "+(-b/(2*a)));
+        } else {
+            System.out.println("Phương trình này có nghiệm kép x1 = x2 = " + (-b / (2 * a)));
         }
     }
 }

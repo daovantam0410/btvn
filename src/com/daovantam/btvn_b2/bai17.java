@@ -4,21 +4,21 @@ import java.util.Scanner;
 
 public class bai17 {
 
-    private static int tinhGiaiThua(int n){
-        if (n<=1)
+    private static int tinhGiaiThua(int n) {
+        if (n <= 1)
             return 1;
         else
-            return n*tinhGiaiThua(n-1);
+            return n * tinhGiaiThua(n - 1);
     }
 
-    private static float bai17(int n, int x){
+    private static float bai17(int n, int x) {
         int tu = 1;
         int mau = 1;
         float tong = 0;
-        for (int i = 1; i <= n ; i++) {
-            tu = tu*x;
+        for (int i = 1; i <= n; i++) {
+            tu = tu * x;
             tinhGiaiThua(n);
-            tong = tong + (float) tu/tinhGiaiThua(n);
+            tong = tong + (float) tu / tinhGiaiThua(n);
         }
         return tong;
     }
@@ -29,7 +29,7 @@ public class bai17 {
         int x = scanner.nextInt();
         System.out.println("Nhập vào n = ");
         int n = scanner.nextInt();
-        float tong = bai17(n,x);
-        System.out.println("Tổng = "+tong);
+        float tong = bai17(n, x);
+        System.out.println("Tổng = " + tong);
     }
 }

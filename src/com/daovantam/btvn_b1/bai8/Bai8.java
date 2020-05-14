@@ -34,21 +34,21 @@ public class Bai8 {
 
 //        Tính định thức
 
-        float D = (float) a*e-d*b;
-        float Dx = (float) c*e-f*b;
-        float Dy = (float) a*f-d*c;
+        float D = (float) a * e - d * b;
+        float Dx = (float) c * e - f * b;
+        float Dy = (float) a * f - d * c;
 
-        float x =Dx/D;
-        float y = Dy/D;
+        float x = Dx / D;
+        float y = Dy / D;
 
-        if (D==0){
-            if(Dx==0 && Dy==0){
+        if (D == 0) {
+            if (Dx == 0 && Dy == 0) {
                 System.out.println("Hệ phương trình có vô số nghiệm!");
-            }else {
+            } else {
                 System.out.println("Hệ phương trình này vô nghiệm!");
             }
-        }else {
-            System.out.println("Hệ phương trình này có nghiệm duy nhất là x =  "+x+" và y = "+y);
+        } else {
+            System.out.println("Hệ phương trình này có nghiệm duy nhất là x =  " + x + " và y = " + y);
         }
     }
 }

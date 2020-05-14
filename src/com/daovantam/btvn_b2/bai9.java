@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class bai9 {
 
-    private static float bai9(int n){
+    private static float bai9(int n) {
         float tich = 1;
-        for (int i = 1; i <=n ; i++) {
-            tich = tich*i;
+        for (int i = 1; i <= n; i++) {
+            tich = tich * i;
         }
         return tich;
     }
@@ -17,6 +17,6 @@ public class bai9 {
         System.out.println("Nhập vào số phần tử n: ");
         int n = scanner.nextInt();
         float tich = bai9(n);
-        System.out.println("Tích = "+tich);
+        System.out.println("Tích = " + tich);
     }
 }

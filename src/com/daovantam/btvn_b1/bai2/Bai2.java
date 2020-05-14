@@ -10,11 +10,11 @@ public class Bai2 {
 
         System.out.println("Nhập vào số có hai chữ số: ");
         int n = new Scanner(System.in).nextInt();
-        int hdv=n%10;
-        n=n/10;
-        int hc=n%10;
-        n=n/10;
-        switch (hc){
+        int hdv = n % 10;
+        n = n / 10;
+        int hc = n % 10;
+        n = n / 10;
+        switch (hc) {
             case 1:
                 System.out.println("Mười");
                 break;
@@ -43,7 +43,7 @@ public class Bai2 {
                 System.out.println("Chín mươi");
                 break;
         }
-        switch (hdv){
+        switch (hdv) {
             case 1:
                 System.out.println("một");
                 break;

@@ -18,18 +18,18 @@ public class Bai3 {
         System.out.println("Nhập vào thâm niên công tác: ");
         int n = new Scanner(System.in).nextInt();
         float salary;
-        if (n < 12){
-            salary = (float) (1.92*650000);
-            System.out.println("Lương = "+salary);
-        }else if (n>=12 && n<36){
-            salary = (float) (2.34*650000);
-            System.out.println("Lương = "+salary);
-        }else if (n>=36 && n<60){
-            salary = (float) 3*650000;
-            System.out.println("Lương = "+salary);
-        }else {
-            salary = (float) (4.5*650000);
-            System.out.println("Lương = "+salary);
+        if (n < 12) {
+            salary = (float) (1.92 * 650000);
+            System.out.println("Lương = " + salary);
+        } else if (n >= 12 && n < 36) {
+            salary = (float) (2.34 * 650000);
+            System.out.println("Lương = " + salary);
+        } else if (n >= 36 && n < 60) {
+            salary = (float) 3 * 650000;
+            System.out.println("Lương = " + salary);
+        } else {
+            salary = (float) (4.5 * 650000);
+            System.out.println("Lương = " + salary);
         }
     }
 }
